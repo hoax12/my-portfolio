@@ -10,14 +10,21 @@
 .nav-about {
     transform: translateX(-1.56rem);
 }
+.nav-education {
+    transform: translateX(-5.56rem);
+}
 .nav-skills {
-    transform: translateX(-6.56rem);
+    transform: translateX(-9.56rem);
+}
+.nav-experience {
+    transform: translateX(-13.94rem);
+
 }
 .nav-projects {
-    transform: translateX(-10.94rem);
+    transform: translateX(-17.94rem);
 }
 .nav-contact {
-    transform: translateX(-15.62rem);
+    transform: translateX(-20.62rem);
 }
 
 a{
@@ -45,7 +52,9 @@ a{
 
 @media (max-width: 1100px){
     .nav-about,
+    .nav-education,
     .nav-skills,
+    .nav-experience,
     .nav-projects,
     .nav-contact {
         transform: translateX(0);

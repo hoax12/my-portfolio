@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import {Link,useLocation} from "react-router-dom";
 import astronuatHelmet from "../assets/astronaut-helmet.png";
+import education from "../assets/education.png";
 import deadEye from "../assets/dead-eye.png";
+import experience from "../assets/experience.png";
 import stack from "../assets/stack.png";
 import envelope from "../assets/envelope.png";
 import "../styles/nav.css";
@@ -14,8 +16,12 @@ export default function Nav() {
         switch (location.pathname){
             case "/":
                 return "nav-about";
+            case "/education":
+                return "nav-education";
             case "/skills":
                 return "nav-skills";
+            case "/experience":
+                return "nav-experience";
             case "/projects":
                 return "nav-projects";
             case "/contact":
@@ -29,8 +35,12 @@ export default function Nav() {
         switch (location.pathname){
             case "/":
                 return "ABOUT";
+            case "/education":
+                return "EDUCATION";
             case "/skills":
                 return "SKILLS";
+            case "/experience":
+                return "EXPERIENCE";
             case "/projects":
                 return "PROJETCS";
             case "/contact":
@@ -68,10 +78,22 @@ const isCurrentPage = (navClass) => {
             "nav-about"
         )}
         {renderNavLink(
+            "/education",
+            education,
+            "education icon",
+            "nav-education"
+        )}
+        {renderNavLink(
             "/skills",
             deadEye,
             "deadEye icon",
             "nav-skills"
+        )}
+        {renderNavLink(
+            "/experience",
+            experience,
+            "experience icon",
+            "nav-experience"
         )}
         {renderNavLink(
             "/projects",
